@@ -823,16 +823,17 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.34.4",
+
+            "version": "1.34.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "b9a444d829c9a16735aceca1b173e765745bcc0c"
+                "reference": "19201b87f7dba2a7cbf1cccdf0e1da13c04ee9c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/b9a444d829c9a16735aceca1b173e765745bcc0c",
-                "reference": "b9a444d829c9a16735aceca1b173e765745bcc0c",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/19201b87f7dba2a7cbf1cccdf0e1da13c04ee9c9",
+                "reference": "19201b87f7dba2a7cbf1cccdf0e1da13c04ee9c9",
                 "shasum": ""
             },
             "require": {
@@ -845,7 +846,6 @@
             "suggest": {
                 "friendsofphp/php-cs-fixer": "Needed for the `composer phpcs` command. Allow to automatically fix code style.",
                 "phpstan/phpstan": "Needed for the `composer phpstan` command. Allow to detect potential errors."
-            },
             "type": "library",
             "extra": {
                 "laravel": {
@@ -877,7 +877,8 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-11-13T08:26:10+00:00"
+
+            "time": "2018-11-08T13:33:47+00:00"
         },
         {
             "name": "nikic/php-parser",
