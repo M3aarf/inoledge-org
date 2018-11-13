@@ -1,4 +1,4 @@
-@include('layoutt.header')
+@include('layout.header')
 @include('layout.sidebar')
 @include('layout.navbar')
 @yield('header')
