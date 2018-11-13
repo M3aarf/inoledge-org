@@ -1,5 +1,5 @@
 @section('sidebar')
-    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+    <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-5.jpg">
 
     <!--
 
@@ -19,25 +19,25 @@
             <li class="active">
                 <a href="dashboard.html">
                     <i class="pe-7s-graph"></i>
-                    <p>Dashboard</p>
+                    <p>الرئيسية</p>
                 </a>
             </li>
             <li>
                 <a href="user.html">
                     <i class="pe-7s-user"></i>
-                    <p>User Profile</p>
+                    <p>الطلاب</p>
                 </a>
             </li>
             <li>
                 <a href="table.html">
                     <i class="pe-7s-note2"></i>
-                    <p>Table List</p>
+                    <p>الكورسات</p>
                 </a>
             </li>
             <li>
                 <a href="typography.html">
                     <i class="pe-7s-news-paper"></i>
-                    <p>Typography</p>
+                    <p>المواعيد</p>
                 </a>
             </li>
             <li>
