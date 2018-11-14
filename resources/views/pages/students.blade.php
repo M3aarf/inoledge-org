@@ -2,7 +2,7 @@
 @section('content')
   <div class="row dir-r">
       <div class="col-lg-12 ">
-         <a href="" class="btn-new"><i class="fa fa-plus"></i> طالب جديد </a>
+         <a href="{{\Request::url('')}}/new " class="btn-new"><i class="fa fa-plus"></i> طالب جديد </a>
         <div class="actions-list">
             <a href="" class="option-btn">عرض التقارير</a>
         </div>  

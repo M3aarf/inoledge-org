@@ -41,7 +41,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-
+  /*
         demo.initChartist();
 
         $.notify({
@@ -52,7 +52,7 @@
             type: 'info',
             timer: 4000
         });
-
+*/
     });
 </script>
 

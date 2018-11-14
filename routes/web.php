@@ -19,3 +19,7 @@ Route::get('/students', function ()
 {
     return view('pages/students');
 });
+Route::get('/students/new', function () 
+{
+    return view('students/new');
+});
