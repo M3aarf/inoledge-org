@@ -1,0 +1,43 @@
+body
+{
+    font-family:hacen;
+}
+@font-face 
+{
+    font-family:hacen;
+    src:url('/../../fonts/hacen.ttf');
+}
+body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, .alert, a, .td-name, td, button.close
+{
+    font-family:hacen;
+}
+.btn-new
+{
+    display:inline-block;
+    padding:10px;
+    background:#00cb51;
+    color:#fff;
+    margin: 10px 0px;
+    direction: rtl;
+}
+.btn-new:hover
+{
+    color:#fff;
+}
+.dir-r
+{
+    direction:rtl;
+}
+.option-btn
+{
+    display:inline-block;
+    color:#fff;
+    padding:10px;
+    background-color:dimgray;
+}
+.actions-list
+{
+    text-align:left;
+    float: left;
+    margin: 10px 0px;
+}

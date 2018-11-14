@@ -11,7 +11,7 @@
     <div class="sidebar-wrapper">
         <div class="logo">
             <a href="http://www.creative-tim.com" class="simple-text">
-                Creative Tim
+              أكاديمية انولدج
             </a>
         </div>
 
@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li>
-                <a href="user.html">
+                <a href="{{url('/students')}}">
                     <i class="pe-7s-user"></i>
                     <p>الطلاب</p>
                 </a>
@@ -58,12 +58,7 @@
                     <p>Notifications</p>
                 </a>
             </li>
-            <li class="active-pro">
-                <a href="upgrade.html">
-                    <i class="pe-7s-rocket"></i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li>
+        
         </ul>
     </div>
 </div>
