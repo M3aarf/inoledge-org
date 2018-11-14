@@ -33,7 +33,10 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
     display:inline-block;
     color:#fff;
     padding:10px;
-    background-color:dimgray;
+    background-color:#48525f;
+}
+.option-btn:hover{
+    color:#fff;
 }
 .actions-list
 {
