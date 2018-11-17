@@ -10,14 +10,14 @@
 
     <div class="sidebar-wrapper">
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text">
+            <a href="{{url('')}}" class="simple-text">
               أكاديمية انولدج
             </a>
         </div>
 
         <ul class="nav">
             <li class="active">
-                <a href="dashboard.html">
+                <a href="{{url('')}}">
                     <i class="pe-7s-graph"></i>
                     <p>الرئيسية</p>
                 </a>
@@ -29,15 +29,15 @@
                 </a>
             </li>
             <li>
-                <a href="table.html">
+                <a href="{{url('/courses')}}">
                     <i class="pe-7s-note2"></i>
                     <p>الكورسات</p>
                 </a>
             </li>
             <li>
-                <a href="typography.html">
+                <a href="{{url('/camp')}}">
                     <i class="pe-7s-news-paper"></i>
-                    <p>المواعيد</p>
+                    <p>مواعيد الكورسات</p>
                 </a>
             </li>
             <li>

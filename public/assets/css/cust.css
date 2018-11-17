@@ -13,12 +13,53 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
 }
 .btn-new
 {
-    display:inline-block;
-    padding:10px;
-    background:#00cb51;
-    color:#fff;
+    display: inline-block;
+    background: #00cb51;
+    color: #fff;
     margin: 10px 0px;
     direction: rtl;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-left:10px;
+}
+.camp-info
+{
+    text-align: center;
+    border-top: 2px solid #47b9f9;
+    border-bottom: 2px solid #47b9f9;
+    padding: 10px;
+    display: table-cell;
+    height: 180px;
+    vertical-align: middle;
+    width:160px;
+    font-size: 34px;
+}
+.camp-info div:nth-child(1)
+{
+    font-size: 44px;
+    color: #34a1de;
+}
+.camp-info div:nth-child(2)
+{
+    font-size:20px;
+    color:gray;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9
+{
+    float:right;
+}
+.btn-new i
+{
+    margin-left:7px;
+}
+.con-box
+{
+    direction:rtl;
+}
+.options-color
+{
+    background:#2eb2e6 !important;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4
 {
@@ -28,9 +69,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4
 {
        border-radius: 2px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
-    background-color: #ececec;
+    background-color: #2eb2e6;
     margin-bottom: 20px;
     padding: 10px;
+    color:#fff;
 }
 .btn-new:hover
 {
@@ -55,4 +97,108 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4
     text-align:left;
     float: left;
     margin: 10px 0px;
+}
+.con-box
+{
+    padding:15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(63, 63, 68, 0.1);
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.card
+{
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius: ;:0px;
+}
+.blue
+{
+    background:#2eb2e6  !important;
+}
+::placeholder
+{
+    color:#b5b5b5 !important;
+}
+input[type=checkbox], input[type=radio]
+{
+    margin:3px !important;
+}
+.radio-inline input[type=radio]
+{
+    right:0px;
+}
+.radio-inline
+{
+    padding-right:20px;
+}
+select option:first-child
+{
+    color:#b5b5b5 !important;
+}
+select
+{
+    color:#b5b5b5 !important;
+}
+select option
+{
+    color:#000;
+}
+.main-panel > .content
+{
+    padding: 70px 15px;
+}
+.navbar-fixed
+{
+    position:fixed;
+    width:calc(100% - 262px);
+    z-index:5;
+    background:#fff;
+    opacity:1;
+
+
+}
+.sidebar .sidebar-wrapper
+{
+    text-align:right;
+}
+.navbar-header
+{
+    float:right;
+}
+.sidebar
+{
+    right:0px;
+    left:auto;
+}
+.navbar-brand
+{
+    float:right;
+}
+.calend  .fa-calendar
+{
+
+}
+a:hover, a:focus
+{
+    color:#fff;
+}
+.calend
+{
+    background-color: #47b9f9;
+    width: 210px;
+    height: 180px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 25px;
+}
+.calend .fa-calendar-alt
+{
+    font-size:65px;
+    margin-bottom: 10px;
+}
+.camp .col-lg-3
+{
+    display:table;
 }

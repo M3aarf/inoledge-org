@@ -12,73 +12,78 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Username</label>
-                                                <input type="text" class="form-control" placeholder="Username" value="michael23">
+
+                                                <input type="text" class="form-control" placeholder="الاسم ثلاثي" >
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Email">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                                <input type="email" class="form-control" placeholder="الاسم باللغة الإنجليزية ثلاثي">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                <input type="email" class="form-control" placeholder="رقم الموبايل">
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Address</label>
-                                                <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                <input type="email" class="form-control" placeholder="الايميل">
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label>City</label>
-                                                <input type="text" class="form-control" placeholder="City" value="Mike">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label>Country</label>
-                                                <input type="text" class="form-control" placeholder="Country" value="Andrew">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label>Postal Code</label>
-                                                <input type="number" class="form-control" placeholder="ZIP Code">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>About Me</label>
-                                                <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optradio" checked>مدرسة
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optradio">معهد
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optradio">كلية
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="optradio">موظف
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="مجال العمل او الدراسة">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <select class="form-control" id="sel1">
+                                                    <option>عرفت الأكاديميه عن طريق اى ؟</option>
+                                                    <option>إعلان فيديو علي الفيس بوك</option>
+                                                    <option>إعلان مكتوب على الفيس بوك</option>
+                                                    <option>من صديق</option>
+                                                    <option>اخرى</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <select class="form-control" id="sel1">
+                                                    <option class="gray">مكان سكنك او عملك او درستك بعيد عن الكورس بوقت اد اى ؟</option>
+                                                    <option>أقل من ساعة</option>
+                                                    <option>من ساعه لساعة ونص </option>
+                                                    <option>أكتر من ساعتين</option>
+                                                    <option>خارج القاهرة الكبرى</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea rows="3" class="form-control" placeholder="اى ملاحظات" ></textarea>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                    <button type="submit" class="btn btn-info btn-fill pull-right">إضافة الطالب</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>

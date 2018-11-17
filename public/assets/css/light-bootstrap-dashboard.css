@@ -513,6 +513,7 @@ input:focus {
     z-index: 2;
     float: right;
     width: calc(100% - 260px);
+    margin-right:260px;
 }
 
 .main-panel > .content {
@@ -3274,19 +3275,13 @@ fieldset[disabled] .btn-neutral.active {
     body > .navbar-collapse.collapse {
         display: none !important;
     }
-    .card form [class*="col-"] {
-        padding: 6px;
-    }
     .card form [class*="col-"]:first-child {
         padding-left: 15px;
-    }
-    .card form [class*="col-"]:last-child {
-        padding-right: 15px;
     }
 }
 
 /*          Changes for small display      */
-@media (max-width: 991px) {
+@media (max-width:767px) {
     .main-panel {
         width: 100%;
     }
@@ -3331,8 +3326,8 @@ fieldset[disabled] .btn-neutral.active {
         display: block;
         top: 0;
         height: 100%;
-        right: 0;
-        left: auto;
+        left: 0;
+        right: auto;
         z-index: 1032;
         visibility: visible;
         background-color: #999;
@@ -3391,9 +3386,6 @@ fieldset[disabled] .btn-neutral.active {
         -o-transform: translate3d(0px, 0, 0);
         -ms-transform: translate3d(0px, 0, 0);
         transform: translate3d(0px, 0, 0);
-    }
-    .nav-open .navbar .container {
-        left: -250px;
     }
     .nav-open .main-panel {
         left: 0;

@@ -23,3 +23,19 @@ Route::get('/students/new', function ()
 {
     return view('students/new');
 });
+Route::get('/courses', function ()
+{
+    return view('pages/courses');
+});
+Route::get('/courses/new', function ()
+{
+    return view('courses/new');
+});
+Route::get('/camp', function ()
+{
+    return view('pages/camp');
+});
+Route::get('/camp/new', function ()
+{
+    return view('camp/new');
+});
