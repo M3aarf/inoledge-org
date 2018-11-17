@@ -1,6 +1,7 @@
 @extends('default')
 @section('page-title')الرئيسية @endsection
 @section('content')
+   
 <div class="row">
     <div class="col-md-4">
         <div class="card">

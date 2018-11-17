@@ -41,9 +41,9 @@
                 </a>
             </li>
             <li>
-                <a href="icons.html">
-                    <i class="pe-7s-science"></i>
-                    <p>Icons</p>
+                <a href="{{url('/invoices')}}">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <p>الفواتير</p>
                 </a>
             </li>
             <li>

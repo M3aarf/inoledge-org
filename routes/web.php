@@ -39,3 +39,11 @@ Route::get('/camp/new', function ()
 {
     return view('camp/new');
 });
+Route::get('/invoices', function ()
+{
+    return view('pages/invoices');
+});
+Route::get('/invoices/new', function ()
+{
+    return view('invoices/new');
+});

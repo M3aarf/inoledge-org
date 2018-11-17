@@ -202,3 +202,55 @@ a:hover, a:focus
 {
     display:table;
 }
+@media (max-width:767px)
+{
+    .main-panel
+    {
+     margin-right:0px !important;
+    }
+    .navbar-fixed
+    {
+        width:100%;
+    }
+    .camp-info:last-child
+    {
+        border-bottom:none;
+    }
+    .con-box
+    {
+        padding:5px;
+    }
+    .btn-new
+    {
+        padding:10px;
+    }
+}
+.btn-info.btn-fill
+{
+    display: inline-block;
+    background: #00cb51;
+    color: #fff;
+    margin: 10px 0px;
+    direction: rtl;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-left: 10px;
+    border:none;
+}
+.btn-info.btn-fill:hover
+{
+    display: inline-block;
+    background: #00cb51;
+    color: #fff;
+    margin: 10px 0px;
+    direction: rtl;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+.bootstrap-select .dropdown-menu.inner ,.bootstrap-select .dropdown-toggle .filter-option-inner
+{
+    text-align:right;
+}

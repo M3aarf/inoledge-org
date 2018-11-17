@@ -47,6 +47,11 @@
                                 <input type="text" class="form-control" placeholder="رسوم الكورس">
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="يوم الكورس الاسبوعي">
+                            </div>
+                        </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <select class="form-control" id="sel1">
