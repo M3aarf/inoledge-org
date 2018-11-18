@@ -1,6 +1,9 @@
 @extends('default')
 @section('page-title')مواعيد الكورسات @endsection
 @section('content')
+<?php 
+echo $test;
+?>
     <div class="row dir-r">
 
             <div class="con-box">
