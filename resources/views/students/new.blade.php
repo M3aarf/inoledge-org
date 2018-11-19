@@ -33,6 +33,11 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
+                                                <input  type="date" class="text-right form-control" placeholder="تاريخ الميلاد">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
                                                 <label class="radio-inline">
                                                     <input type="radio" name="optradio" checked>مدرسة
                                                 </label>
