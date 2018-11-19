@@ -47,3 +47,8 @@ Route::get('/invoices/new', function ()
 {
     return view('invoices/new');
 });
+
+Route::get('/invoices/reports', function ()
+{
+    return view('invoices/reports');
+});

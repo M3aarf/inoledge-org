@@ -254,3 +254,13 @@ a:hover, a:focus
 {
     text-align:right;
 }
+.sep
+{
+    height: 20px;
+    display: inline-block;
+}
+.invoice-info
+{
+    background:#fff;
+    padding:20px;
+}

@@ -50,10 +50,26 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-md-12">
 
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="المبلغ المدفوع" >
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>طريقة الحجز</option>
+                                    <option>فودافون كاش</option>
+                                    <option>كورسيدا</option>
+                                    <option>شحن اتصالات</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
                     <button type="submit" class="btn btn-info btn-fill pull-right">حفظ الفاتورة</button>
+                    <button type="submit" class="btn btn-info btn-fill pull-right">حفظ و طباعة الفاتورة</button>
                     <div class="clearfix"></div>
                 </form>
             </div>

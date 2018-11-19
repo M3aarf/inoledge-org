@@ -1,7 +1,20 @@
 @extends('default')
 @section('page-title')الرئيسية @endsection
 @section('content')
-  
+  <?php
+          /*
+  use mikehaertl\wkhtmlto\Pdf;
+
+  $pdf = new Pdf;
+
+  // Add a HTML file, a HTML string or a page from a URL
+  $pdf->addPage('https://css-tricks.com/examples/EditableInvoice/');
+  $pdf->binary = 'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe';
+  // Save the PDF
+  $pdf->saveAs('neww.pdf');
+  echo $pdf->getError();
+          */
+  ?>
 <div class="row">
     <div class="col-md-4">
         <div class="card">

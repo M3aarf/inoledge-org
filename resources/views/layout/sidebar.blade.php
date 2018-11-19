@@ -46,18 +46,7 @@
                     <p>الفواتير</p>
                 </a>
             </li>
-            <li>
-                <a href="maps.html">
-                    <i class="pe-7s-map-marker"></i>
-                    <p>Maps</p>
-                </a>
-            </li>
-            <li>
-                <a href="notifications.html">
-                    <i class="pe-7s-bell"></i>
-                    <p>Notifications</p>
-                </a>
-            </li>
+
         
         </ul>
     </div>
