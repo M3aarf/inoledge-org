@@ -25,7 +25,6 @@ class Student extends Migration
         connection
         howfar ->optional
         notes ->optional
-        
         */
          Schema::create('student', function (Blueprint $table) {
             $table->increments('id');
