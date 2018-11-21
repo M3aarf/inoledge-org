@@ -53,3 +53,11 @@ Route::get('/invoices/reports', function ()
     return view('invoices/reports');
 });
 Route::POST('/students/new','students@new')->name('add_new_student');
+
+
+
+
+
+Route::get('datatable', 'DataTableController@datatable');
+// Get Data
+Route::get('datatable/getdata', 'DataTableController@getStudents')->name('datatable/getdata');

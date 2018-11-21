@@ -25,7 +25,7 @@
   <!--  CSS for Demo Purpose, don't include it in your project     -->
   <link href="{{asset('assets/css/demo.css')}}" rel="stylesheet" />
   <link href="{{asset('assets/css/cust.css')}}" rel="stylesheet" />
-
+  <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!--     Fonts and icons     -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
