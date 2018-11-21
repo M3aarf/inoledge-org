@@ -12,6 +12,15 @@ class students extends Controller
     {
           $std = new student;
           $std->arName = $request->input('ar-name');
+          $std->enName = $request->input('en-name');
+          $std->phone = $request->input('phone');
+          $std->email = $request->input('email');
+          $std->bod = $request->input('dob');
+          $std->carT = $request->input('field');
+          $std->carF = $request->input('career');
+          $std->connec = $request->input('connec');
+          $std->howfar = $request->input('loction');
+          $std->notes= $request->input('notes');
           $std->save();
     }
 }
