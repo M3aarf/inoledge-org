@@ -40,16 +40,16 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label class="radio-inline">
-                    <input type="radio" name="optradio"  name="field">مدرسة
+                    <input type="radio"   name="field" value="مدرسة">مدرسة
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio"  name="field">معهد
+                    <input type="radio"   name="field" value="معهد">معهد
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio"  name="field">كلية
+                    <input type="radio"   name="field" value="كلية">كلية
                 </label>
                 <label class="radio-inline">
-                    <input type="radio" name="optradio"  name="field">موظف
+                    <input type="radio"   name="field" value="موظف">موظف
                 </label>
             </div>
         </div>

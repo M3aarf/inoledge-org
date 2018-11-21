@@ -175,6 +175,7 @@ return [
         Unisharp\Ckeditor\ServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         'Collective\Html\HtmlServiceProvider',
+        Yajra\DataTables\DataTablesServiceProvider::class,
     ],
 
     /*
@@ -226,6 +227,7 @@ return [
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
 
     ],
 
