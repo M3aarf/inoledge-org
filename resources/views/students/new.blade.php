@@ -6,19 +6,20 @@
                                 <h4 class="title">إضافة طالب جديد</h4>
                             </div>
                         <div class="card">
-                           
+                            <?php echo Form::open(array('route' => 'add_new_student'))
+                            ?>
+
                             <div class="content">
-                                <form>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
 
-                                                <input type="text" class="form-control" placeholder="الاسم ثلاثي" >
+                                                <input type="text" name="ar-name" class="form-control" placeholder="الاسم ثلاثي" >
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="الاسم باللغة الإنجليزية ثلاثي">
+                                                <input type="email" name="en-name"  class="form-control" placeholder="الاسم باللغة الإنجليزية ثلاثي">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -90,8 +91,9 @@
 
                                     <button type="submit" class="btn btn-info btn-fill pull-right">إضافة الطالب</button>
                                     <div class="clearfix"></div>
-                                </form>
+
                             </div>
+                                </form>
                         </div>
                     </div>
 @endsection

@@ -52,3 +52,4 @@ Route::get('/invoices/reports', function ()
 {
     return view('invoices/reports');
 });
+Route::POST('/students/new','students@new')->name('add_new_student');

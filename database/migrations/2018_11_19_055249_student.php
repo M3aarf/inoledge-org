@@ -13,39 +13,21 @@ class Student extends Migration
      */
     public function up()
     {
-        /*
-        id
-        ar name
-        eng name
-        data of birth ->optional
-        phone number
-        email
-        career type
-        career field
-        connection
-        howfar ->optional
-        notes ->optional
-        */
+
          Schema::create('student', function (Blueprint $table) {
             $table->increments('id');
             $table->string('arName',100);
             $table->string('enName',100);
-            $table->date('bod');   
+            $table->date('bod');   //null
             $table->string('carT',100);
             $table->string('carF',100);
             $table->string('connec',100);
-            $table->string('howfar',100);
-            $table->string('notes',200);
+            $table->string('howfar',100)->nullable()->change();; //null
+            $table->string('notes',200)->nullable()->change();; //null
              
             $table->timestamps();
         });
     }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::drop('student');

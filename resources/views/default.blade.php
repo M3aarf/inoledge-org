@@ -61,6 +61,9 @@
     CKEDITOR.replace( 'summary-ckeditor' );
     $('select').selectpicker();
 </script>
+<script>
+
+</script>
 
 </html>
  
