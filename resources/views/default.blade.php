@@ -63,6 +63,7 @@
         }
     });
 
-</script>
+</script> 
+@yield('script')
 </html>
  

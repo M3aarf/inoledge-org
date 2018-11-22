@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Request;
 use App\student;
 use DataTables;
 use DB;
 class DataTableController extends Controller
 {
-    public function getStudnts()
+    public function getStudents()
     {
-            return  \DataTales::of(studnt::query())->make(true);
+            return  \DataTables::of(student::query())->make(true);
     }
 }

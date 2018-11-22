@@ -60,4 +60,4 @@ Route::POST('/students/new','students@new')->name('add_new_student');
 
 Route::get('datatable', 'DataTableController@datatable');
 // Get Data
-Route::get('datatable/getdata', 'DataTableController@getStudents')->name('datatable/getdata');
+Route::get('datatable/getStudents', 'DataTableController@getStudents')->name('getStudnts');

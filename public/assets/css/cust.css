@@ -264,3 +264,19 @@ a:hover, a:focus
     background:#fff;
     padding:20px;
 }
+#DataTables_Table_0_filter
+{
+    margin-bottom:15px;
+}
+.dataTables_wrapper .dataTables_filter input
+{
+    margin-right:10px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button
+{
+        border: none;
+    background: #2eb2e6;
+    color: white !important;
+    height: 32;
+    width: 32px;
+}
