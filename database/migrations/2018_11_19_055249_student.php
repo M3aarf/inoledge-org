@@ -22,8 +22,6 @@ class Student extends Migration
             $table->string('carT',100);
             $table->string('carF',100);
             $table->string('connec',100);
-            $table->string('howfar',100)->nullable()->change();; //null
-            $table->string('notes',200)->nullable()->change();; //null
              
             $table->timestamps();
         });
