@@ -16,31 +16,31 @@
         </div>
 
         <ul class="nav">
-            <li class="active">
+            <li class="<?php if($page=='home'){echo 'active';}?>">
                 <a href="{{url('')}}">
                     <i class="pe-7s-graph"></i>
                     <p>الرئيسية</p>
                 </a>
             </li>
-            <li>
+            <li class="<?php if($page=='student'){echo 'active';}?>">
                 <a href="{{url('/students')}}">
                     <i class="pe-7s-user"></i>
                     <p>الطلاب</p>
                 </a>
             </li>
-            <li>
+            <li class="<?php if($page=='courses'){echo 'active';}?>">
                 <a href="{{url('/courses')}}">
                     <i class="pe-7s-note2"></i>
                     <p>الكورسات</p>
                 </a>
             </li>
-            <li>
+            <li class="<?php if($page=='camp'){echo 'active';}?>">
                 <a href="{{url('/camp')}}">
                     <i class="pe-7s-news-paper"></i>
                     <p>مواعيد الكورسات</p>
                 </a>
             </li>
-            <li>
+            <li class="<?php if($page=='invoices'){echo 'active';}?>">
                 <a href="{{url('/invoices')}}">
                     <i class="fas fa-file-invoice-dollar"></i>
                     <p>الفواتير</p>

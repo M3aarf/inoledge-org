@@ -1,6 +1,7 @@
 @extends('default')
 @section('page-title')مواعيد الكورسات @endsection
 @section('content')
+    <?php $page = 'camp'; ?>
     <div class="row dir-r">
 
             <div class="con-box">

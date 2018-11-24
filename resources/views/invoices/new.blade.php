@@ -1,6 +1,7 @@
 @extends('default')
 @section('content')
 
+    <?php $page = 'invoices'; ?>
     <div class="col-md-12 dir-r">
         <div class="header">
             <h4 class="title">إنشاء فاتورة جديدة</h4>

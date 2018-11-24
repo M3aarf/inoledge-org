@@ -1,6 +1,7 @@
 @extends('default')
 @section('content')
- 
+    <?php $page = 'student'; ?>
+ <div class="row">
 <div class="col-md-12 dir-r">
 <div class="header">
 <h4 class="title">إضافة طالب جديد</h4>
@@ -14,22 +15,22 @@
         <div class="col-md-12">
             <div class="form-group">
 
-                <input type="text" name="ar-name" class="form-control" placeholder="الاسم ثلاثي" >
+                <input required="required" type="text" name="ar-name" class="form-control" placeholder="الاسم ثلاثي" >
             </div>
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input type="email" name="en-name"  class="form-control" placeholder="الاسم باللغة الإنجليزية ثلاثي">
+                <input  required="required" type="text" name="en-name"  class="form-control" placeholder="الاسم باللغة الإنجليزية ثلاثي">
             </div>
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input name ="phone" class="form-control" placeholder="رقم الموبايل">
+                <input  required="required" type="text" name ="phone" class="form-control" placeholder="رقم الموبايل">
             </div>
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="الايميل">
+                <input type="email" name="email" class="form-control" placeholder="الايميل">
             </div>
         </div>
         <div class="col-md-12">
@@ -55,12 +56,12 @@
         </div>
         <div class="col-md-12">
             <div class="form-group">
-                <input type="email" class="form-control" name ="career" placeholder="مجال العمل او الدراسة">
+                <input  required="required" type="text" class="form-control" name ="career" placeholder="مجال العمل او الدراسة">
             </div>
         </div>
         <div class="col-lg-12">
             <div class="form-group">
-                <select class="form-control" id="sel1" name="connec">
+                <select  required="required" class="form-control" id="sel1" name="connec">
                     <option>عرفت الأكاديميه عن طريق اى ؟</option>
                     <option>إعلان فيديو علي الفيس بوك</option>
                     <option>إعلان مكتوب على الفيس بوك</option>
@@ -72,7 +73,7 @@
         </div>
         <div class="col-lg-12">
             <div class="form-group">
-                <select class="form-control" id="sel1" name="loction">
+                <select  required="required" class="form-control" id="sel1" name="loction">
                     <option class="gray">مكان سكنك او عملك او درستك بعيد عن الكورس بوقت اد اى ؟</option>
                     <option>أقل من ساعة</option>
                     <option>من ساعه لساعة ونص </option>
@@ -96,4 +97,7 @@
 </form>
 </div>
 </div>
+ </div>
 @endsection
+
+

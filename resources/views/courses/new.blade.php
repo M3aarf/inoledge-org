@@ -1,6 +1,6 @@
 @extends('default')
 @section('content')
-
+    <?php $page = 'courses'; ?>
     <div class="col-md-12 dir-r">
         <div class="header">
             <h4 class="title">إضافة كورس جديد</h4>
@@ -8,33 +8,39 @@
         <div class="card">
 
             <div class="content">
-                <form>
-                    <div class="row">
+                <?php echo Form::open(array('route' => 'add_new_course'))
+                ?>
+
+                <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
 
-                                <input type="text" class="form-control" placeholder="عنوان الكورس" >
+                                <input type="text" name="title" required="required" class="form-control" placeholder="عنوان الكورس" >
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="عدد ساعات الكورس">
+                                <input type="number" name="hours" required="required" class="form-control" placeholder="عدد ساعات الكورس">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea class="form-control" id="summary-ckeditor"></textarea>
+                                <label>محتوي الكورس</label>
+                                <textarea class="form-control" required="required" name="content" id="summary-ckeditor"></textarea>
                             </div>
                         </div>
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea rows="3" class="form-control" placeholder="هدف الكورس" ></textarea>
+
+                                <label>هدف الكورس</label>
+                                <textarea rows="3" class="form-control"required="required"  id="summary-ckeditor1" name="target" placeholder="هدف الكورس" ></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea rows="3" class="form-control" placeholder="متطلبات الكورس" ></textarea>
+                                <label>متطلبات الكورس</label>
+                                <textarea rows="3" class="form-control" required="required" id="summary-ckeditor2" name="requir" placeholder="متطلبات الكورس" ></textarea>
                             </div>
                         </div>
                     </div>

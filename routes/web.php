@@ -18,15 +18,13 @@ Route::get('/', function ()
 Route::get('/students', function () 
 {
     return view('pages/students');
-});
+})->name('students');
 Route::get('/students/new', function () 
 {
     return view('students/new');
 });
-Route::get('/courses', function ()
-{
-    return view('pages/courses');
-});
+Route::get('/courses', 'courses@index')->name('courses');
+Route::get('/courses/view/{id}', 'courses@viewCourse')->name('viewcourse');
 Route::get('/courses/new', function ()
 {
     return view('courses/new');
@@ -52,12 +50,19 @@ Route::get('/invoices/reports', function ()
 {
     return view('invoices/reports');
 });
+Route::get('/students/reports', function ()
+{
+    return view('students/reports');
+});
 Route::POST('/students/new','students@new')->name('add_new_student');
+Route::get('student/{id}', 'students@viewStudent')->name('showStudent');
+Route::POST('student/update/', 'students@update_student')->name('update_student');
 
-
-
-
-
+//course
+Route::POST('/courses/new','courses@new')->name('add_new_course');
+//Route::get('student/{id}', 'students@viewStudent')->name('showStudent');
+Route::get('courses/edit/{id}', 'courses@edit')->name('edit_course');
+Route::POST('courses/update/', 'courses@update_course')->name('update_course');
 Route::get('datatable', 'DataTableController@datatable');
 // Get Data
-Route::get('datatable/getStudents', 'DataTableController@getStudents')->name('getStudnts');
+Route::get('datatable/getStudents', 'DataTableController@getStudents')->name('getStudents');

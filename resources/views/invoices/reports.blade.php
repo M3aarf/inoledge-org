@@ -1,6 +1,7 @@
 @extends('default')
 @section('content')
 
+    <?php $page = 'invoices'; ?>
     <!--
     #number of complete invoices
     #number of uncomplete invoices

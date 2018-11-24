@@ -1,6 +1,6 @@
 @extends('default')
 @section('content')
-
+    <?php $page = 'camp'; ?>
     <div class="col-md-12 dir-r">
         <div class="header">
             <h4 class="title">إضافة معاد جديد</h4>

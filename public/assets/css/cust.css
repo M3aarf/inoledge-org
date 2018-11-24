@@ -130,6 +130,7 @@ input[type=checkbox], input[type=radio]
 .radio-inline
 {
     padding-right:20px;
+    padding-left:13px;
 }
 select option:first-child
 {
@@ -177,10 +178,6 @@ select option
 .calend  .fa-calendar
 {
 
-}
-a:hover, a:focus
-{
-    color:#fff;
 }
 .calend
 {
@@ -272,11 +269,123 @@ a:hover, a:focus
 {
     margin-right:10px;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button
+.table.dataTable th
 {
-        border: none;
+    text-align: right;
+    color: white;
+    background:#2eb2e6;
+
+}
+.dataTables_wrapper .dataTables_filter input
+{
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    padding-right: 10px;
+}
+label
+{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #5f5f5f;
+}
+.table.dataTable tr td
+{
+ color:gray;
+}
+.table.dataTable tr td:nth-child(2)
+{
+    color:black;
+}
+.table.dataTable tr td:nth-child(1) ,.table.dataTable tr th:nth-child(1)
+{
+    width: 30px !important;
+    text-align: center;
+}
+.table.dataTable tr td:last-child a
+{
+    color:darkgrey !important;
+    padding:10px;
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9
+{
+    float:right !important;
+}
+.gray
+{
+    color:gray;
+}
+.invoice-link
+{
+    padding-left: 25px;
+    display: inline-block;
+    font-size: 20px;
+    bordeR: 1px solid;
+    border-radius: 3px;
+    margin-top: 15px;
+    color: #88888b;
+    margin-left:20px;
+
+}
+.invoice-link:hover , .invoice-link:active,.invoice-link:visited,.invoice-link:focus
+{
+    border: 1px solid #2eb2e6;
+    color: #2eb2e6;
+}
+.invoice-link i {
     background: #2eb2e6;
-    color: white !important;
-    height: 32;
-    width: 32px;
+    color: #fff;
+    padding: 20px;
+    margin-left: 15px;
+}
+.status-red
+{
+  background:#e21616 !important;
+}
+.std-report i
+{
+    font-size: 50px;
+    color: #2eb2e6;
+    padding: 15px;
+}
+.std-report .num
+{
+    color: gray;
+    font-size: 25px;
+}
+.white
+{
+    color:#fff !important;
+}
+.link-list
+{
+    padding: 15px 30px;
+    background: #2f455d;
+    color: white;
+    border-radius: 3px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.link-list i
+{
+    height: 30px;
+    width: 30px;
+    background: #5797dc;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+a:active,a:focus,a:hover,a:visited
+{
+    color:auto;
+}
+ul
+{
+    list-style:none;
 }

@@ -1,6 +1,8 @@
 @extends('default')
 @section('page-title')الفواتير @endsection
 @section('content')
+
+    <?php $page = 'invoices'; ?>
     <div class="row dir-r">
         <div class="col-lg-12 ">
             <div class="con-box">

@@ -10,6 +10,13 @@ class DataTableController extends Controller
 {
     public function getStudents()
     {
-            return  \DataTables::of(student::query())->make(true);
+              $std =  student::query();
+            return  \DataTables::of($std)
+                ->addColumn('action',function($std)
+                {
+                    $link =  url("/student/{$std->id}");
+                    return '<a href='.$link.'><i class="fa fa-user" ></i> </a>';
+                })
+                ->make(true);
     }
 }

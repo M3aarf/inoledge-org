@@ -60,10 +60,26 @@
         {
                 CKEDITOR.replace( 'summary-ckeditor' );
                 $('select').selectpicker();
+        }  if($('#summary-ckeditor1'))
+        {
+                CKEDITOR.replace( 'summary-ckeditor1' );
+                $('select').selectpicker();
+        }  if($('#summary-ckeditor2'))
+        {
+                CKEDITOR.replace( 'summary-ckeditor2' );
+                $('select').selectpicker();
         }
     });
 
-</script> 
+</script>
+<script>
+    var path = window.location.pathname;
+    if(path.includes('student'))
+    {
+        $(".nav li .student").addClass("active");
+    }
+</script>
 @yield('script')
+
 </html>
  
