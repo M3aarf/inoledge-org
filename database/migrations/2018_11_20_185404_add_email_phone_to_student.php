@@ -14,8 +14,8 @@ class AddEmailPhoneToStudent extends Migration
     public function up()
     {
         Schema::table('student', function($table) {
-            $table->integer('phone');
-            $table->integer('email');
+            $table->string('phone',50);
+            $table->string('email',100);
         });
     }
 
