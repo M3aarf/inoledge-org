@@ -13,20 +13,7 @@ class Student extends Migration
      */
     public function up()
     {
-        /*
-        id
-        ar name
-        eng name
-        data of birth ->optional
-        phone number
-        email
-        career type
-        career field
-        connection
-        howfar ->optional
-        notes ->optional
-        
-        */
+       
          Schema::create('student', function (Blueprint $table) {
             $table->increments('id');
             $table->string('arName',100);

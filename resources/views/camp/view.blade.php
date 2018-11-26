@@ -1,15 +1,10 @@
 @extends('default')
-@section('page-title')مواعيد الكورسات @endsection
 @section('content')
-    <?php $page = 'camp'; ?>
-    <div class="row dir-r">
-     
-            <div class="con-box">
-                <a href="{{\Request::url('')}}/new " class="btn-new"><i class="fa fa-plus"></i> معاد جديد </a>
-            </div>
-        @foreach($camps as $camp)
-        <div class="col-lg-10" >
-               <h3>{{courseTitle($camp->course_id)}}</h3><br>
+    <?php $page = 'courses'; ?>
+   
+        <div class="col-lg-12 dir-r" >
+            <br>
+               <h3 class="text-center">{{courseTitle($camp->course_id)}}</h3><br>
              <a href="{{\Request::url('')}}/{{$camp->id}}">
                  
                  <div class="con-box">
@@ -47,8 +42,4 @@
             </div>
              </a>
         </div>
-        @endforeach
-        
-
-    </div>
 @endsection

@@ -6,17 +6,17 @@
             <h4 class="title">إضافة معاد جديد</h4>
         </div>
         <div class="card">
-
+              
             <div class="content">
-                <form>
+               {!! Form::open(['url' => route('add_new_camp'), 'method' => 'POST']) !!}
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <select class="form-control" id="sel1">
-                                    <option>الكورس</option>
-                                    <option>كورس تصميم مواقع</option>
-                                    <option>كورس اندرويد</option>
-                                    <option>كورس جافا</option>
+                                <select  name="course_id" class="form-control" id="sel1">
+                                      @foreach ($courses as $course)
+                                       
+                                    <option value="{{$course->id}}">{{$course->title}}</option>
+                                            @endforeach
                                 </select>
                             </div>
 
@@ -24,42 +24,42 @@
                         <div class="col-md-12">
                             <div class="form-group">
 
-                                <input type="date" class="form-control" placeholder="معاد الكورس" >
+                                <input name="camp_date" type="date" class="form-control" placeholder="معاد الكورس" >
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="كام محاضرة في الاسبوع">
+                                <input name="sessions_num" type="number" class="form-control" placeholder="كام محاضرة في الاسبوع">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="المحاضرة كام ساعة">
+                                <input  name="hours" type="number" class="form-control" placeholder="المحاضرة كام ساعة">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="بداية  و نهاية المحاضرة الساعة كام">
+                                <input  name="start_end" type="text" class="form-control" placeholder="بداية  و نهاية المحاضرة الساعة كام">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="رسوم الكورس">
+                                <input  name="cost" type="text" class="form-control" placeholder="رسوم الكورس">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="يوم الكورس الاسبوعي">
+                                <input  name="day" type="text" class="form-control" placeholder="يوم الكورس الاسبوعي">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <select class="form-control" id="sel1">
-                                    <option>محاضر الكورس</option>
-                                    <option>حمزة نبيل</option>
-                                    <option>محمود الجيزاوي</option>
-                                    <option>عبد الحميد</option>
-                                    <option>أحمد ناصر</option>
+                                <select  name="instructor" class="form-control" id="sel1">
+                                    <option >محاضر الكورس</option>
+                                    <option value="حمزة نبيل">حمزة نبيل</option>
+                                    <option value="محمود الجيزاوي">محمود الجيزاوي</option>
+                                    <option value="عبد الحميد">عبد الحميد</option>
+                                    <option value="أحمد ناصر">أحمد ناصر</option>
                                 </select>
                             </div>
 
