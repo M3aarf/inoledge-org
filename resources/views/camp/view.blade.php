@@ -1,12 +1,12 @@
 @extends('default')
 @section('content')
-    <?php $page = 'courses'; ?>
+    <?php $page = 'camp'; ?>
    
         <div class="col-lg-12 dir-r" >
             <br>
                <h3 class="text-center">{{courseTitle($camp->course_id)}}</h3><br>
-             <a href="{{\Request::url('')}}/{{$camp->id}}">
-                 
+           
+                 <a href="{{\Request::url('')}}/edit" class="view-controles"><i class="fas fa-edit"></i></a>
                  <div class="con-box">
                     <div class="camp">
                         <div class="row">
@@ -40,6 +40,6 @@
                         </div>
                     </div>
             </div>
-             </a>
+        
         </div>
 @endsection

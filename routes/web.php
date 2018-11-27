@@ -29,7 +29,7 @@ Route::get('/courses/new', function ()
 {
     return view('courses/new');
 });
-Route::get('camp', 'camps@index');
+Route::get('camp', 'camps@index')->name('camps');
 Route::get('/camp/new', function ()
 {
     return view('camp/new');
@@ -65,4 +65,6 @@ Route::get('datatable', 'DataTableController@datatable');
 Route::get('datatable/getStudents', 'DataTableController@getStudents')->name('getStudents');
 Route::get('camp/new', 'camps@new')->name('campNew');
 Route::get('camp/{id}', 'camps@view')->name('campView');
+Route::get('camp/{id}/edit', 'camps@edit')->name('campEdit');
 Route::POST('camp/new/add', 'camps@add_new')->name('add_new_camp');
+Route::POST('camp/update', 'camps@update')->name('edit_camp');

@@ -47,7 +47,37 @@ class camps extends Controller
         $camp->instructor = $request->input('instructor');
         $camp->save();
         
-       return view('pages.camp');
+        return redirect()->route('camps');
+        
+    }
+     public function edit($id)
+    {
+        
+        $camp =  camp::find($id);
+         $data = array
+             (
+             'camp' => $camp,
+             'courses'=>course::all(),
+         );
+        
+       return view('camp.edit')->with($data);
+        
+    }
+     public function update(Request $request)
+    {
+        
+        $camp =  camp::find($request->input('id'));
+        $camp->course_id = $request->input('course_id');
+        $camp->camp_date = $request->input('camp_date');
+        $camp->sessions_num = $request->input('sessions_num');
+        $camp->hours = $request->input('hours');
+        $camp->start_end = $request->input('start_end');
+        $camp->cost = $request->input('cost');
+        $camp->day = $request->input('day');
+        $camp->instructor = $request->input('instructor');
+        $camp->save();
+        
+      return redirect()->route('camps');
         
     }
 }

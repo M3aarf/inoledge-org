@@ -8,7 +8,7 @@
                 <a href="{{\Request::url('')}}/new " class="btn-new"><i class="fa fa-plus"></i> معاد جديد </a>
             </div>
         @foreach($camps as $camp)
-        <div class="col-lg-10" >
+        <div class="col-lg-12" >
                <h3>{{courseTitle($camp->course_id)}}</h3><br>
              <a href="{{\Request::url('')}}/{{$camp->id}}">
                  
