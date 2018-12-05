@@ -1,5 +1,5 @@
 @section('sidebar')
-    <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-5.jpg">
+    <div class="sidebar" data-color="blue" data-image="{{asset('assets/img/sidebar-4.jpg')}}">
 
     <!--
 
