@@ -22,7 +22,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <select class="selectpicker"  data-live-search="true">
+                                <select class="selectpicker"  data-live-search="true" id="selectpicker">
                                     <option>Mustard</option>
                                     <option>Ketchup</option>
                                     <option>Barbecue</option>
@@ -76,4 +76,12 @@
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+    <script>
+        
+       $('select').attr('data-live-search');
+        
+    </script>
+
 @endsection

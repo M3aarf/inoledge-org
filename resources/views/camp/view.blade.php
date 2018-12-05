@@ -40,6 +40,18 @@
                         </div>
                     </div>
             </div>
+                 
         
+        </div>
+        <div class="col-lg-6 dir-r">
+                <div class="students-list">
+                    <h3>طلاب الكورس</h3> <br>
+                     <ul>
+                     <li> <a href="{{url('/student/')}}">محمد احمد علي</a> </li>
+                     <li> <a href="">محمد احمد علي</a> </li>
+                     <li> <a href="">محمد احمد علي</a> </li>
+                     <li> <a href="">محمد احمد علي</a> </li>
+                     </ul>
+                 </div>
         </div>
 @endsection

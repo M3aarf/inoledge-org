@@ -79,6 +79,7 @@
         $(".nav li .student").addClass("active");
     }
 </script>
+
 @yield('script')
 
 </html>
