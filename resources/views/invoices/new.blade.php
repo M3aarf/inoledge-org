@@ -14,20 +14,9 @@
                         <div class="col-lg-12">
                             <h5>خانة اختيار الطالب بالرقم او الاسم</h5>
                         </div>
-                        <div class="col-md-12">
-
-                            <div class="form-group">
-                                <input type="number" class="form-control" placeholder="رقم الطالب" >
-                            </div>
-                        </div>
                         <div class="col-lg-12">
-                            <div class="form-group">
-                                <select class="selectpicker with-ajax"  data-live-search="true" id="ajax-select">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Barbecue</option>
-                                    <option>Barbecue</option>
-                                    <option>Barbecue</option>
+                            <div class="form-group" id="ajax-select">
+                                <select class="selectpicker with-ajax"  data-live-search="true">
                                 </select>
 
                             </div>
@@ -78,9 +67,7 @@
     </div>
 @endsection
 @section('script')
-  
-     <script> 
-  
-       </script> 
-
+    <script>
+      var ajaxlink = "{{route('getStdId')}}";
+    </script>
 @endsection

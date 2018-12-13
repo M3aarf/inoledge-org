@@ -43,7 +43,7 @@
         $(".nav li .student").addClass("active");
     }
 </script>
+   @yield('script')
    <script src="{{asset('assets/js/app.js')}}"></script>
 
 </html>
- 

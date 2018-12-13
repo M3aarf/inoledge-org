@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', function () 
+Route::get('/', function ()
 {
     return view('pages/home');
 });
-Route::get('/students', function () 
+Route::get('/students', function ()
 {
     return view('pages/students');
 })->name('students');
-Route::get('/students/new', function () 
+Route::get('/students/new', function ()
 {
     return view('students/new');
 });
@@ -68,3 +68,6 @@ Route::get('camp/{id}', 'camps@view')->name('campView');
 Route::get('camp/{id}/edit', 'camps@edit')->name('campEdit');
 Route::POST('camp/new/add', 'camps@add_new')->name('add_new_camp');
 Route::POST('camp/update', 'camps@update')->name('edit_camp');
+
+//get ajax Search Results
+Route::POST('student/getStdId','students@getStdId')->name('getStdId');

@@ -64,5 +64,9 @@ class students extends Controller
         $std->save();
         return redirect('/students');
     }
-
+    public function getStdId ()
+    {
+      $results = student::select('arName')->where('arName', 'like', '%' .$_POST['searchkey']. '%')->get();
+      return $results;
+    }
 }
