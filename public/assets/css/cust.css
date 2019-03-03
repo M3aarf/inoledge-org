@@ -11,6 +11,38 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, 
 {
     font-family:hacen;
 }
+.main-btn
+{
+    display: inline-block;
+    color: #fff;
+    direction: rtl;
+    font-size: 18px;
+    padding: 0px 20px;
+    border-radius: 12px;
+    margin-left:10px;
+    height:34px;
+    line-height:34px;
+    border:none;
+    
+}
+.actions-bar
+{
+        padding: 15px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.action-btn
+{
+    background:#6a777f;
+}
+.active-btn
+{
+    background:#00bf17;
+}
+.disactive-btn
+{
+    background:#00bf17;
+}
 .btn-new
 {
     display: inline-block;

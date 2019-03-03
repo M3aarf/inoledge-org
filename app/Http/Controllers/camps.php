@@ -80,4 +80,8 @@ class camps extends Controller
       return redirect()->route('camps');
         
     }
+    public function active()
+    {
+        
+    }
 }

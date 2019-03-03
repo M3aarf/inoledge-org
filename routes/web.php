@@ -38,11 +38,6 @@ Route::get('/invoices', function ()
 {
     return view('pages/invoices');
 });
-Route::get('/invoices/new', function ()
-{
-    return view('invoices/new');
-});
-
 Route::get('/invoices/reports', function ()
 {
     return view('invoices/reports');
@@ -71,3 +66,11 @@ Route::POST('camp/update', 'camps@update')->name('edit_camp');
 
 //get ajax Search Results
 Route::POST('student/getStdId','students@getStdId')->name('getStdId');
+
+//invoices
+Route::get('/invoices/new','invoices@add');
+Route::POST('/invoices/add','invoice@create')->name('add_new_invoice');
+
+//todo
+Route::get('/todo','todo@index');
+

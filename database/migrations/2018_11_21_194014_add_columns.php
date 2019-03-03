@@ -16,7 +16,7 @@ class AddColumns extends Migration
         Schema::table('student', function($table) {
 
             $table->string('howfar',100);
-            $table->string('notes',200);
+            $table->string('notes',200)->nullable();
         });
     }
 
@@ -28,8 +28,8 @@ class AddColumns extends Migration
     public function down()
     {
         Schema::table('student', function($table) {
-            $table->string('howfar',100);
-            $table->string('notes',200);
+            $table->dropColumn('howfar');
+            $table->dropColumn('notes');
         });
     }
 }

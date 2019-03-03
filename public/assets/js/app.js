@@ -36,4 +36,32 @@
          });
      }
    });
+     function changeStatus()
+     {
+         var getstatus = ;
+         
+         if(getatatus == '1')
+             {
+                  $.ajax({
+             headers:
+             {
+                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+             },
+             type: "POST",
+             url: ajaxlink,
+             data:
+             {
+                 searchkey: name
+             },
+             success: function(arr)
+             {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+             }
+         });
+             }
+         else
+             {
+                 
+             }
+     }
  });

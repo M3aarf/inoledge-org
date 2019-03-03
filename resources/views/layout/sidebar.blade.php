@@ -46,6 +46,13 @@
                     <p>الفواتير</p>
                 </a>
             </li>
+            
+            <li class="<?php if($page=='todo'){echo 'active';}?>">
+                <a href="{{url('/todo')}}">
+                    <i class="fas fa-list"></i>
+                    <p>قائمة المهام</p>
+                </a>
+            </li>
 
         
         </ul>

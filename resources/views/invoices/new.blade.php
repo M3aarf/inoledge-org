@@ -28,15 +28,16 @@
         <div class="card">
 
             <div class="content">
-                <form>
+            <!--Start Form !-->
+                 {!! Form::open(['url' => route('add_new_invoice'), 'method' => 'POST']) !!}
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <select class="form-control" id="sel1">
-                                    <option>معاد الكورس</option>
-                                    <option>تصميم مواقع</option>
-                                    <option>اندرويد</option>
-                                    <option>جافا</option>
+                                    <option>اختيار معاد الكورس</option>
+                                    @foreach ($camps as $camp)
+                                     <option>{{$camp->camp_date}} :: {{$camp->start_end}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>

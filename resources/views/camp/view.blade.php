@@ -6,7 +6,12 @@
             <br>
                <h3 class="text-center">{{courseTitle($camp->course_id)}}</h3><br>
            
-                 <a href="{{\Request::url('')}}/edit" class="view-controles"><i class="fas fa-edit"></i></a>
+                <div class="actions-bar">
+                   <a href="{{\Request::url('')}}/edit" class="main-btn action-btn">Edit</a>
+                  <button class="main-btn active-btn" onclick="changeStatus()">
+                  Active
+               </button>  
+                </div>  
                  <div class="con-box">
                     <div class="camp">
                         <div class="row">
@@ -40,6 +45,7 @@
                         </div>
                     </div>
             </div>
+              
                  
         
         </div>
